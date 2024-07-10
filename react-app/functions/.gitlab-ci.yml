@@ -1,0 +1,29 @@
+image: python:3.11-slim
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+before_script:
+  - pip install poetry
+  - poetry config virtualenvs.create false
+  - poetry install
+
+Linting:
+  stage: lint
+  script:
+    - poetry run ruff check
+
+Tests:
+  stage: test
+  script:
+    # poetry run pytest --cov-config=.coveragerc --cov-report=html --cov=react-app .\react-app\functions\test
+    - poetry run pytest --cov-config=.coveragerc  --cov=react-app .\react-app\functions\test
+
+Deploy:
+  stage: deploy
+  script:
+    - echo "deployed"
+

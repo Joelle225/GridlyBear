@@ -1,0 +1,53 @@
+image: node:19.0.0-slim
+
+include:
+  - 'react-app/functions/.gitlab-ci.yml'
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+  - deploy-functions
+
+before_script:
+  - cd react-app/
+  - npm i -g firebase-tools
+  - npm ci
+
+Linting:
+  stage: lint
+  script:
+    - echo "linting..."
+
+Tests:
+  stage: test
+  script:
+    - npm test
+
+Build:
+  stage: build
+  script:
+    - npm run build
+  only:
+    refs:
+      - main
+
+Deploy:
+  stage: deploy
+  script:
+    - npm run build
+    - firebase deploy --only hosting --token $FIREBASE_TOKEN
+  only:
+    refs:
+      - main
+
+deploy-functions:
+  stage: deploy-functions
+  script:
+    - firebase deploy --only functions --token $FIREBASE_TOKEN
+  only:
+    refs:
+      - main
+    changes:
+      - functions/**/*

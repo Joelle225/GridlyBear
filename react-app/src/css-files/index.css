@@ -1,0 +1,169 @@
+.leaflet-container{
+    background: rgb(255, 255, 255) !important;
+}
+
+.leaflet-control-geosearch {  display:none; left: 300px;  z-index: 10002; }
+
+.slick-dots li button:before{
+  background-color: blueviolet !important;
+}
+.slick-dots li.slick-active button:before{
+  background-color: blueviolet !important;
+}
+
+.resultMarker {
+  background: #193165;
+  border-radius: 10px;
+    padding-top: 2px;
+  text-align: center;
+  color: #EEEEEE;
+  font-family: -apple-system, system-ui;
+  font-size: 14px;
+}
+
+.dot {
+  width: 48px;
+  height: 48px;
+  border: #636363 solid 6px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #ECEFF1;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 32.5px 0 32.5px 56.3px;
+  border-color: transparent transparent transparent #c37777;
+  transform: rotate(0deg);
+}
+
+.arrow {
+	width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: rotate(45deg);
+	
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		border-width: .8vmin .8vmin 0 0;
+		border-style: solid;
+		border-color: #fafafa;
+		display: block;
+		transform-origin: 100% 0;
+	}
+}
+
+.sideIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.marker-hover {
+  cursor: crosshair;
+}
+
+.marker-draggable {
+  cursor: move;
+}
+
+.delete-button {
+  color: red;
+}
+
+.hasShadow {
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+}
+
+.leaflet-control-geosearch .search-input {
+  display: none;
+  width: 300px;
+}
+
+.leaflet-control-geosearch .glass {
+  background: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="file"] {
+  display: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Change the color of the arrows */
+.slick-arrow {
+  color: black !important; /* Change this to your desired color */
+}
+
+/* Change the color of the slide indicators (dots) */
+.slick-dots li button {
+  color: black !important; /* Change this to your desired color */
+}
+
+/* Change the color of the active slide indicator (dot) */
+.slick-dots li.slick-active button {
+  color: #193165 !important; /* Change this to your desired color */
+}
+
+.lol {
+	position: absolute;
+	top: 70px;
+	right: 40px;
+}
+
+/* Modifying tooltip style to fit into marker*/
+.leaflet-tooltip.test-tooltip {
+	/*positioning*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(25,49,86,1);
+	transform: translate(92%);
+	border: 2px solid rgba(25,49,86,1);
+	border-radius: 50%; /*making tooltip into a circle*/
+	box-shadow: none;
+	padding: 0; 
+	margin: 0; 
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	box-sizing: border-box;
+}

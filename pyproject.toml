@@ -1,0 +1,24 @@
+[tool.poetry]
+package-mode = false
+name = "flask_server"
+version = "0.1.0"
+description = ""
+authors = ["Alexandru <a.m.sologon@student.tudelft.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask  = "^3.0.3"
+pandapower = "^2.14.7"
+numba = "^0.60.0"
+cors = "^1.0.1"
+jsonpickle = "^3.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.0"
+ruff = "^0.4.9"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
