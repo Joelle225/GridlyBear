@@ -1,11 +1,12 @@
-![GridlyBear](./react-app/src/images/GridlyBear_paw.png)
-
+<img src="./react-app/src/images/GridlyBear_paw.png" alt="GridlyBear" width="200"/>
 
 # Gridly Bear
 > Electrical Modeling Tool
 
 Gridly Bear is an electrical modelling tool with a friendly GUI best suited for 
-beginners."It uses PandaPower to ensure all the simulation are correct."?
+beginners. It uses PandaPower to ensure all the simulation are correct.
+
+GridlyBear was developed over the course of ten weeks by a group of five Computer Science Bachelors students.
 
 [//]: # (Last line needs replecements)
 
@@ -15,7 +16,7 @@ To use the app just go to https://gridlybear.web.app/ and start modelling.
 
 ## Features
 
-Our app is best suited for beginners because it abstracts the programming layer and a
+The app is best suited for beginners because it abstracts the programming layer and a
 good part of the Electrical Engineering one from powerful modelling tools like PandaPower.
 with a user friendly and easy to use GUI.
  -You can visualise the configuration of your network at the location.
