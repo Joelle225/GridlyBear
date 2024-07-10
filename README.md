@@ -8,6 +8,8 @@ beginners. It uses PandaPower to ensure all the simulation are correct.
 
 GridlyBear was developed over the course of ten weeks by a group of five Computer Science Bachelors students.
 
+[![Showcase Video](https://img.youtube.com/vi/joP4ZPyQ-YU/0.jpg)](https://www.youtube.com/watch?v=joP4ZPyQ-YU)
+
 [//]: # (Last line needs replecements)
 
 ## Getting started
